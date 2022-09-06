@@ -160,7 +160,7 @@
     font-size: 28px;
     font-weight: bold;
     line-height: 1.214;
-    letter-spacing: .3rem;
+    letter-spacing: .25em;
     display: flex;
     align-items: center;
     padding-top: 18px;
@@ -226,8 +226,8 @@
   }
 
   &_title_outer {
-    margin-top: 24px;
-    margin-bottom: 37px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
     @include fo.pc-layout {
       margin-top: 0;
@@ -262,20 +262,20 @@
 
 .treatment {
   padding-top: 78px;
-  margin-bottom: 81px;
+  margin-bottom: 78px;
 
   @include fo.pc-layout {
     padding: 78px 5% 0;
   }
 
   &_title {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
 
   &_text {
     text-align: center;
     line-height: 2.375;
-    margin-bottom: 34px;
+    margin-bottom: 25px;
   }
 
   &_card {
@@ -325,13 +325,13 @@
       font-weight: bold;
       line-height: 1.583;
       text-align: center;
-      margin-bottom: 45px;
+      margin-bottom: 33px;
     }
 
     &_text {
       font-weight: bold;
       line-height: 2.375;
-      margin-bottom: 70px;
+      margin-bottom: 65px;
     }
   }
 }
@@ -357,7 +357,7 @@
     background-color: fo.$color-light;
     border-radius: 30px;
     box-shadow: 0 3px 6px fo.$color-gray02;
-    padding: 49px 66px 46px;
+    padding: 40px 66px 46px;
 
     @include fo.pc-layout {
       max-width: 690px;
@@ -367,15 +367,15 @@
   }
 
   &_list {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   &_item {
-    padding-bottom: 19px;
+    padding-bottom: 12px;
     position: relative;
 
     &:not(:last-child) {
-      margin-bottom: 19px;
+      margin-bottom: 14px;
     }
 
     &:after {
@@ -461,7 +461,7 @@
 //*------------------*
 
 .footer {
-  padding: 196px 0 163px;
+  padding: 188px 0 163px;
 
   @include fo.tb-layout {
     padding-bottom: 50px;
@@ -495,7 +495,7 @@
 
   &_content {
     width: 100%;
-    max-width: 533px;
+    max-width: 538px;
 
     @include fo.pc-layout {
       max-width: calc(690px + 5%);
@@ -508,14 +508,14 @@
     display: block;
     width: 263px;
     height: 73px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   &_address {
     line-height: 2.375;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 
     p:first-child {
       margin-right: 16px;
@@ -528,9 +528,9 @@
 
   &_info {
     font-size: 14px;
-    // line-height: 2.714;
-    margin-bottom: 22px;
-    padding: 19px 0;
+    line-height: 2.37;
+    margin-bottom: 11px;
+    padding: 13px 5px;
     border-top: 2px solid fo.$color-gray04;
     border-bottom: 2px solid fo.$color-gray04;
 
@@ -555,10 +555,6 @@
       li {
         display: flex;
         flex-wrap: wrap;
-
-        &:not(:last-child) {
-          margin-bottom: 13px;
-        }
       }
 
       .--day {
