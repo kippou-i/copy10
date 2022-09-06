@@ -443,6 +443,12 @@ dt {
   display: inline-block;
 }
 
+.max-width {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
 .tel a {
   font-size: 24px;
   font-weight: bold;
@@ -466,11 +472,22 @@ dt {
   align-items: center;
 }
 
+.bg {
+  background-color: #F5FCF8;
+}
+
+.section_title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.583;
+  text-align: center;
+}
+.section_title span {
+  background: linear-gradient(transparent 80%, #99E5A5 0%);
+}
+
 .header_inner {
-  width: 100%;
-  max-width: 1180px;
   height: 130px;
-  margin: 0 auto;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -526,9 +543,6 @@ dt {
 }
 
 .info {
-  width: 100%;
-  max-width: 1180px;
-  margin: 0 auto;
   padding: 162px 0 82px;
 }
 .info figure {
@@ -560,4 +574,55 @@ dt {
 }
 .info_message {
   line-height: 2.375;
+}
+
+.treatment {
+  padding-top: 78px;
+  margin-bottom: 81px;
+}
+.treatment_title {
+  margin-bottom: 70px;
+}
+.treatment_text {
+  text-align: center;
+  line-height: 2.375;
+  margin-bottom: 34px;
+}
+.treatment_card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.treatment_item {
+  width: 33%;
+  max-width: 380px;
+  border: 2px solid #C9C9C9;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 40px 30px 0 30px;
+}
+.treatment_item figure {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: stretch;
+  height: 100%;
+}
+.treatment_item figure img {
+  margin: auto auto 0;
+  display: block;
+  width: 187px;
+  height: 187px;
+  text-align: center;
+}
+.treatment_item_title {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.583;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.treatment_item_text {
+  font-weight: bold;
+  line-height: 2.375;
+  margin-bottom: 70px;
 }
