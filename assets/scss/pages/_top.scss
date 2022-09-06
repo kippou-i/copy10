@@ -34,7 +34,6 @@
 }
 
 
-
 //*------------------*
 //*  header
 //*------------------*
@@ -43,6 +42,7 @@
   &_inner {
     width: 100%;
     max-width: 1180px;
+    height: 130px;
     margin: 0 auto;
     padding: 20px;
     display: flex;
@@ -64,6 +64,50 @@
       font-size: 14px;
       line-height: 1.429;
       margin-bottom: 7px;
+    }
+  }
+}
+
+
+//*------------------*
+//*  fv
+//*------------------*
+
+.fv {
+  background: url(../images/fv_img.png) no-repeat center center / cover;
+  width: 100%;
+  height: 947px;
+  padding-top: 133px;
+  padding-left: 211px;
+
+  &_inner {
+    width: calc(102px + 102px + 80px);
+    height: 562px;
+    position: relative;
+  }
+
+  &_title {
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    background-color: fo.$color-light;
+    width: 102px;
+    height: 562px;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.214;
+    letter-spacing: .3rem;
+    display: flex;
+    align-items: center;
+    padding-top: 18px;
+
+    &:first-child {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    span {
+      color: fo.$color-main;
     }
   }
 }
