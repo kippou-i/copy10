@@ -442,3 +442,50 @@ dt {
 .br {
   display: inline-block;
 }
+
+.tel a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #21A937;
+}
+.tel_inner {
+  display: flex;
+  align-items: center;
+}
+.tel_img {
+  width: 24px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+.tel_number {
+  width: auto;
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.header_inner {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_title {
+  width: 263px;
+  height: 73px;
+}
+.header_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.header_info_time {
+  font-size: 14px;
+  line-height: 1.429;
+  margin-bottom: 7px;
+}

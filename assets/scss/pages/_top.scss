@@ -4,3 +4,66 @@
 //*------------------*
 //*  共通部分
 //*------------------*
+
+.tel {
+  a {
+    font-size: 24px;
+    font-weight: bold;
+    color: fo.$color-main;
+  }
+
+  &_inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &_img {
+    width: 24px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+  }
+
+  &_number {
+    width: auto;
+    height: 35px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+
+//*------------------*
+//*  header
+//*------------------*
+
+.header {
+  &_inner {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_title {
+    width: 263px;
+    height: 73px;
+  }
+
+  &_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &_time {
+      font-size: 14px;
+      line-height: 1.429;
+      margin-bottom: 7px;
+    }
+  }
+}
