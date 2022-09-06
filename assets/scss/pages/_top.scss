@@ -96,6 +96,7 @@
     @include fo.tb-layout {
       width: 150px;
       height: auto;
+      margin-right: 16px;
     }
   }
 
@@ -133,6 +134,10 @@
   height: 947px;
   padding-top: 133px;
   padding-left: 211px;
+
+  @include fo.pc-layout {
+    padding-left: 100px;
+  }
 
   @include fo.tb-layout {
     height: 600px;

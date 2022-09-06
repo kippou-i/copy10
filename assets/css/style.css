@@ -528,6 +528,7 @@ dt {
   .header_title {
     width: 150px;
     height: auto;
+    margin-right: 16px;
   }
 }
 .header_info {
@@ -557,6 +558,11 @@ dt {
   height: 947px;
   padding-top: 133px;
   padding-left: 211px;
+}
+@media screen and (max-width: 1180px) {
+  .fv {
+    padding-left: 100px;
+  }
 }
 @media screen and (max-width: 768px) {
   .fv {
