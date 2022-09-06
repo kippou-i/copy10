@@ -9,6 +9,10 @@
   width: 100%;
   max-width: 1180px;
   margin: 0 auto;
+
+  @include fo.tb-layout {
+    padding: 0 2.5%;
+  }
 }
 
 .tel {
@@ -16,6 +20,10 @@
     font-size: 24px;
     font-weight: bold;
     color: fo.$color-main;
+
+    @include fo.tb-layout {
+      font-size: 16px;
+    }
   }
 
   &_inner {
@@ -29,6 +37,11 @@
     display: flex;
     align-items: center;
     margin-right: 5px;
+
+    @include fo.tb-layout {
+      width: 14px;
+      height: 14px;
+    }
   }
 
   &_number {
@@ -36,6 +49,10 @@
     height: 35px;
     display: flex;
     align-items: center;
+
+    @include fo.tb-layout {
+      height: 16px;
+    }
   }
 }
 
@@ -66,11 +83,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include fo.tb-layout {
+      height: 100px;
+    }
   }
 
   &_title {
     width: 263px;
     height: 73px;
+
+    @include fo.tb-layout {
+      width: 150px;
+      height: auto;
+    }
   }
 
   &_info {
@@ -81,7 +107,17 @@
     &_time {
       font-size: 14px;
       line-height: 1.429;
+      text-align: right;
       margin-bottom: 7px;
+
+      @include fo.tb-layout {
+        font-size: 12px;
+        line-height: 1;
+      }
+
+      span:last-child {
+        padding-left: 8px;
+      }
     }
   }
 }
@@ -98,10 +134,21 @@
   padding-top: 133px;
   padding-left: 211px;
 
+  @include fo.tb-layout {
+    height: 600px;
+    padding-top: 19px;
+    padding-left: 50px;
+    background: url(../images/fv_img.png) no-repeat 50% 95% / cover;
+  }
+
   &_inner {
     width: calc(102px + 102px + 80px);
     height: 562px;
     position: relative;
+
+    @include fo.tb-layout {
+      width: 125px;
+    }
   }
 
   &_title {
@@ -117,6 +164,10 @@
     display: flex;
     align-items: center;
     padding-top: 18px;
+
+    @include fo.tb-layout {
+      width: 50px;
+    }
 
     &:first-child {
       position: absolute;
@@ -138,25 +189,49 @@
 .info {
   padding: 162px 0 82px;
 
+  @include fo.tb-layout {
+    padding: 82px 5%;
+  }
+
   figure {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
 
+    @include fo.pc-layout {
+      flex-direction: column-reverse;
+    }
+
     img {
-      width: 690px;
+      width: 100%;
+      max-width: 690px;
       height: 420px;
       display: block;
+
+      @include fo.pc-layout {
+        height: auto;
+        margin: 0 auto;
+      }
     }
 
     figcaption {
       margin-left: 31px;
+
+      @include fo.pc-layout {
+        width: 100%;
+        max-width: 690px;
+        margin: 0 auto 50px;
+      }
     }
   }
 
   &_title_outer {
     margin-top: 24px;
     margin-bottom: 37px;
+
+    @include fo.pc-layout {
+      margin-top: 0;
+    }
   }
 
   &_title {
@@ -173,6 +248,10 @@
 
   &_message {
     line-height: 2.375;
+
+    @include fo.tb-layout {
+      font-size: 14px;
+    }
   }
 }
 
@@ -184,6 +263,10 @@
 .treatment {
   padding-top: 78px;
   margin-bottom: 81px;
+
+  @include fo.pc-layout {
+    padding: 78px 5% 0;
+  }
 
   &_title {
     margin-bottom: 70px;
@@ -208,6 +291,19 @@
     border-radius: 10px;
     background-color: fo.$color-light;
     padding: 40px 30px 0 30px;
+
+    @include fo.pc-layout {
+      width: 100%;
+      max-width: 690px;
+
+      &:not(:last-child) {
+        margin: 0 auto 30px;
+      }
+
+      &:last-child {
+        margin: 0 auto;
+      }
+    }
 
     figure {
       display: flex;
@@ -248,15 +344,26 @@
 .news {
   padding-bottom: 112px;
 
+  @include fo.pc-layout {
+    padding: 0 5% 112px;
+  }
+
   &_title {
     margin-bottom: 70px;
   }
 
   &_content {
+    width: 100%;
     background-color: fo.$color-light;
     border-radius: 30px;
     box-shadow: 0 3px 6px fo.$color-gray02;
     padding: 49px 66px 46px;
+
+    @include fo.pc-layout {
+      max-width: 690px;
+      margin: 0 auto;
+      padding: 49px 5% 46px;
+    }
   }
 
   &_list {
@@ -285,7 +392,7 @@
 
     a {
       display: flex;
-      flex-direction: row;
+      flex-wrap: wrap;
       align-items: center;
     }
 
@@ -318,6 +425,10 @@
       overflow: hidden;
       text-overflow: ellipsis;
       width: calc(100% - 86px - 30px - 80px - 30px);
+
+      @include fo.tb-layout {
+        width: 100%;
+      }
     }
   }
 
@@ -328,6 +439,10 @@
 
     a {
       position: relative;
+
+      @include fo.tb-layout {
+        margin-right: 5%;
+      }
 
       &:after {
         content: '▶︎';
@@ -348,6 +463,10 @@
 .footer {
   padding: 196px 0 163px;
 
+  @include fo.tb-layout {
+    padding-bottom: 50px;
+  }
+
   &_inner {
     display: flex;
     flex-wrap: wrap;
@@ -355,14 +474,34 @@
   }
 
   &_map {
+    width: 100%;
+    max-width: 608px;
+    height: 440px;
+
+    @include fo.pc-layout {
+      max-width: 690px;
+      margin: 0 auto 50px;
+    }
+
+    @include fo.tb-layout {
+      height: 30vh;
+    }
+
     iframe {
-      width: 608px;
-      height: 440px;
+      width: 100%;
+      height: 100%;
     }
   }
 
   &_content {
-    width: 533px;
+    width: 100%;
+    max-width: 533px;
+
+    @include fo.pc-layout {
+      max-width: calc(690px + 5%);
+      margin: 0 auto;
+      padding: 0 5%;
+    }
   }
 
   &_logo {
@@ -415,6 +554,7 @@
 
       li {
         display: flex;
+        flex-wrap: wrap;
 
         &:not(:last-child) {
           margin-bottom: 13px;
@@ -423,7 +563,16 @@
 
       .--day {
         margin-right: 23px;
-        background: linear-gradient(transparent 80%, fo.$color-accent02 0%);
+
+        span {
+          background: linear-gradient(transparent 80%, fo.$color-accent02 0%);
+        }
+
+        @include fo.tb-layout {
+          margin-right: 0;
+          margin-bottom: 8px;
+          width: 100%;
+        }
       }
 
       .--am {
@@ -437,5 +586,9 @@
     text-align: right;
     font-size: 11px;
     line-height: 3.455;
+
+    @include fo.pc-layout {
+      text-align: center;
+    }
   }
 }
