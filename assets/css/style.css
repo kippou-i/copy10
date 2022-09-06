@@ -524,3 +524,40 @@ dt {
 .fv_title span {
   color: #21A937;
 }
+
+.info {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 162px 0 82px;
+}
+.info figure {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.info figure img {
+  width: 690px;
+  height: 420px;
+  display: block;
+}
+.info figure figcaption {
+  margin-left: 31px;
+}
+.info_title_outer {
+  margin-top: 24px;
+  margin-bottom: 37px;
+}
+.info_title {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.458;
+  background: linear-gradient(transparent 80%, #99E5A5 0%);
+}
+.info_title:first-child {
+  margin-bottom: 32px;
+}
+.info_message {
+  line-height: 2.375;
+}
