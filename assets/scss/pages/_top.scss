@@ -141,9 +141,13 @@
 
   @include fo.tb-layout {
     height: 600px;
-    padding-top: 19px;
+    padding-top: 100px;
     padding-left: 50px;
-    background: url(../images/fv_img.png) no-repeat 50% 95% / cover;
+    background: url(../images/fv_img.png) no-repeat 70% 50% / cover;
+  }
+
+  @include fo.sp-layout {
+    padding-left: 30px;
   }
 
   &_inner {
@@ -152,7 +156,8 @@
     position: relative;
 
     @include fo.tb-layout {
-      width: 125px;
+      width: 135px;
+      height: 400px;
     }
   }
 
@@ -171,7 +176,9 @@
     padding-top: 18px;
 
     @include fo.tb-layout {
-      width: 50px;
+      width: 60px;
+      height: 400px;
+      font-size: 20px;
     }
 
     &:first-child {
@@ -243,10 +250,11 @@
     display: inline-block;
     font-size: 24px;
     font-weight: bold;
-    line-height: 1.458;
-    background: linear-gradient(transparent 80%, fo.$color-accent02 0%);
+    line-height: 1.5;
+    background: linear-gradient(transparent 70%, fo.$color-accent02 0%);
 
     &:first-child {
+      padding-right: 8px;
       margin-bottom: 32px;
     }
   }

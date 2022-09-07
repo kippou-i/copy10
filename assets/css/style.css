@@ -567,9 +567,14 @@ dt {
 @media screen and (max-width: 768px) {
   .fv {
     height: 600px;
-    padding-top: 19px;
+    padding-top: 100px;
     padding-left: 50px;
-    background: url(../images/fv_img.png) no-repeat 50% 95%/cover;
+    background: url(../images/fv_img.png) no-repeat 70% 50%/cover;
+  }
+}
+@media screen and (max-width: 375px) {
+  .fv {
+    padding-left: 30px;
   }
 }
 .fv_inner {
@@ -579,7 +584,8 @@ dt {
 }
 @media screen and (max-width: 768px) {
   .fv_inner {
-    width: 125px;
+    width: 135px;
+    height: 400px;
   }
 }
 .fv_title {
@@ -597,7 +603,9 @@ dt {
 }
 @media screen and (max-width: 768px) {
   .fv_title {
-    width: 50px;
+    width: 60px;
+    height: 400px;
+    font-size: 20px;
   }
 }
 .fv_title:first-child {
@@ -662,10 +670,11 @@ dt {
   display: inline-block;
   font-size: 24px;
   font-weight: bold;
-  line-height: 1.458;
-  background: linear-gradient(transparent 80%, #99E5A5 0%);
+  line-height: 1.5;
+  background: linear-gradient(transparent 70%, #99E5A5 0%);
 }
 .info_title:first-child {
+  padding-right: 8px;
   margin-bottom: 32px;
 }
 .info_message {
