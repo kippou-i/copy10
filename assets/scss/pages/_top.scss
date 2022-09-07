@@ -67,7 +67,8 @@
   text-align: center;
 
   span {
-    background: linear-gradient(transparent 80%, fo.$color-accent02 0%);
+    padding: 0 4px;
+    background: linear-gradient(transparent 70%, fo.$color-accent02 0%);
   }
 }
 
@@ -166,14 +167,14 @@
     writing-mode: vertical-rl;
     background-color: fo.$color-light;
     width: 102px;
-    height: 562px;
+    height: 565px;
     font-size: 28px;
     font-weight: bold;
     line-height: 1.214;
-    letter-spacing: .25em;
+    letter-spacing: .22em;
     display: flex;
     align-items: center;
-    padding-top: 18px;
+    padding-top: 25px;
 
     @include fo.tb-layout {
       width: 60px;
@@ -275,7 +276,7 @@
 
 .treatment {
   padding-top: 78px;
-  margin-bottom: 78px;
+  margin-bottom: 79px;
 
   @include fo.pc-layout {
     padding: 78px 5% 0;
@@ -303,7 +304,7 @@
     border: 2px solid fo.$color-gray03;
     border-radius: 10px;
     background-color: fo.$color-light;
-    padding: 40px 30px 0 30px;
+    padding: 38px 30px 0 30px;
 
     @include fo.pc-layout {
       width: 100%;
@@ -338,13 +339,13 @@
       font-weight: bold;
       line-height: 1.583;
       text-align: center;
-      margin-bottom: 33px;
+      margin-bottom: 37px;
     }
 
     &_text {
       font-weight: bold;
       line-height: 2.375;
-      margin-bottom: 65px;
+      margin-bottom: 62px;
     }
   }
 }
@@ -355,7 +356,7 @@
 //*------------------*
 
 .news {
-  padding-bottom: 112px;
+  padding-bottom: 110px;
 
   @include fo.pc-layout {
     padding: 0 5% 112px;
@@ -370,7 +371,7 @@
     background-color: fo.$color-light;
     border-radius: 30px;
     box-shadow: 0 3px 6px fo.$color-gray02;
-    padding: 40px 66px 46px;
+    padding: 40px 66px 42px;
 
     @include fo.pc-layout {
       max-width: 690px;
@@ -380,7 +381,7 @@
   }
 
   &_list {
-    margin-bottom: 30px;
+    margin-bottom: 29px;
   }
 
   &_item {
@@ -428,7 +429,7 @@
       align-items: center;
       color: fo.$color-light;
       background-color: fo.$color-default;
-      margin-right: 30px;
+      margin-right: 34px;
     }
 
     &_text {
@@ -437,7 +438,7 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      width: calc(100% - 86px - 30px - 80px - 30px);
+      width: calc(100% - 86px - 30px - 80px - 34px);
 
       @include fo.tb-layout {
         width: 100%;
@@ -461,7 +462,7 @@
         content: '▶︎';
         position: absolute;
         top: 50%;
-        right: -24px;
+        right: -21px;
         transform: translateY(-50%);
       }
     }
@@ -474,7 +475,7 @@
 //*------------------*
 
 .footer {
-  padding: 188px 0 163px;
+  padding: 195px 0 163px;
 
   @include fo.tb-layout {
     padding-bottom: 50px;
@@ -521,14 +522,14 @@
     display: block;
     width: 263px;
     height: 73px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   &_address {
     line-height: 2.375;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
 
     p:first-child {
       margin-right: 16px;
@@ -536,14 +537,15 @@
   }
 
   &_tel {
-    margin-bottom: 28px;
+    margin-bottom: 26px;
+    padding-left: 5px;
   }
 
   &_info {
     font-size: 14px;
     line-height: 2.37;
     margin-bottom: 11px;
-    padding: 13px 5px;
+    padding: 15px 5px;
     border-top: 2px solid fo.$color-gray04;
     border-bottom: 2px solid fo.$color-gray04;
 
@@ -552,7 +554,7 @@
       flex-wrap: wrap;
 
       &:not(:last-child) {
-        margin-bottom: 20px;
+        margin-bottom: 18px;
       }
     }
 
